@@ -109,10 +109,10 @@ app.MapGet("/Hotels/{hotelId}/Bookings/{min_date}", async (int hotelId, DateTime
     .WithOpenApi();
 
 // This endpoint is used to send a message to the Azure OpenAI endpoint.
+// original code
 // app.MapPost("/Chat", async Task<string> (HttpRequest request) =>
 // {
 //     var message = await Task.FromResult(request.Form["message"]);
-    
 //     return "This endpoint is not yet available.";
 // })
 //     .WithName("Chat")
